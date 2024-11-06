@@ -1,260 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Idle Soda Game</title>
 </head>
+<link rel="stylesheet" href="style.css">
+
 <body>
     <h1>IDLE SODA GAME</h1>
 
     <div id="stand">
-        <style type="text/css">
-            .tg  {border-collapse:collapse;border-spacing:0;}
-            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-              overflow:hidden;padding:10px 5px;word-break:normal;}
-            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-            .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-            .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-            </style>
-            <table class="tg"><thead>
-              <tr>
-                <th class="tg-c3ow" colspan="6">STAND</th>
-                <th class="tg-0pky"></th>
-              </tr></thead>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="titles" colspan="6">STAND</th>
+                    <th class="cells"></th>
+                </tr>
+            </thead>
             <tbody>
-              <tr>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky">100$</td>
-                <td class="tg-0pky">500$</td>
-                <td class="tg-0pky">1.000$</td>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky"></td>
-              </tr>
-              <tr>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky"></td>
-              </tr>
+                <tr>
+                    <td class="cells"></td>
+                    <td class="cells"></td>
+                    <td class="cells_price">100$</td>
+                    <td class="cells_price">500$</td>
+                    <td class="cells_price">1.000$</td>
+                    <td class="cells_price">5.000$</td>
+                    <td class="cells"></td>
+                </tr>
+                <tr>
+                    <td class="cells"></td>
+                    <td class="cells_product">Fresh Water</td>
+                    <td class="cells_product">Orange Juice</td>
+                    <td class="cells_product">Lemonade</td>
+                    <td class="cells_product">Orange Soda</td>
+                    <td class="cells_product">Cola</td>
+                    <td class="cells"></td>
+                </tr>
+                <tr>
+                    <td class="cells"></td>
+                    <td class="cells_price">1$</td>
+                    <td class="cells_price">2$</td>
+                    <td class="cells_price">3$</td>
+                    <td class="cells_price">4$</td>
+                    <td class="cells_price">5$</td>
+                    <td class="cells"></td>
+                </tr>
+                <tr>
+                    <td class="cells"></td>
+                    <td class="cells_stock">Stock = 20</td>
+                    <td class="cells_stock">Stock = 10</td>
+                    <td class="cells_stock">Stock = 10</td>
+                    <td class="cells_stock">Stock = 10</td>
+                    <td class="cells_stock">Stock = 10</td>
+                    <td class="cells"></td>
+                </tr>
             </tbody>
-            </table>
+        </table>
     </div>
 
-<br>
+    <br>
 
     <div id="vendingMachine">
-        <style type="text/css">
-            .tg  {border-collapse:collapse;border-spacing:0;}
-            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-              overflow:hidden;padding:10px 5px;word-break:normal;}
-            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-            .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-            .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-            </style>
-            <table class="tg"><thead>
-              <tr>
-                <th class="tg-c3ow" colspan="4">Vending Machine</th>
-              </tr></thead>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="titles" colspan="4">Vending Machine</th>
+                </tr>
+            </thead>
             <tbody>
-              <tr>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky">Fresh<br>Water</td>
-                <td class="tg-c3ow">1$</td>
-                <td class="tg-0pky"></td>
-              </tr>
-              <tr>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky">Orange<br>Juice</td>
-                <td class="tg-c3ow">2$</td>
-                <td class="tg-0pky"></td>
-              </tr>
-              <tr>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky">Lemonade</td>
-                <td class="tg-c3ow">3$</td>
-                <td class="tg-0pky"></td>
-              </tr>
-              <tr>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky">Orange Soda</td>
-                <td class="tg-c3ow">4$</td>
-                <td class="tg-0pky"></td>
-              </tr>
-              <tr>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky">Cola</td>
-                <td class="tg-c3ow">5$</td>
-                <td class="tg-0pky"></td>
-              </tr>
-              <tr>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky">Stock = 20</td>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky"></td>
-              </tr>
+                <tr>
+                    <td class="cells"></td>
+                    <td class="cells_product">Fresh<br>Water</td>
+                    <td class="cells_price">1$</td>
+                    <td class="cells"></td>
+                </tr>
+                <tr>
+                    <td class="cells"></td>
+                    <td class="cells_product">Orange<br>Juice</td>
+                    <td class="cells_price">2$</td>
+                    <td class="cells"></td>
+                </tr>
+                <tr>
+                    <td class="cells"></td>
+                    <td class="cells_product">Lemonade</td>
+                    <td class="cells_price">3$</td>
+                    <td class="cells"></td>
+                </tr>
+                <tr>
+                    <td class="cells"></td>
+                    <td class="cells_product">Orange Soda</td>
+                    <td class="cells_price">4$</td>
+                    <td class="cells"></td>
+                </tr>
+                <tr>
+                    <td class="cells"></td>
+                    <td class="cells_product">Cola</td>
+                    <td class="cells_price">5$</td>
+                    <td class="cells"></td>
+                </tr>
+                <tr>
+                    <td class="cells"></td>
+                    <td class="cells">Stock = 20</td>
+                    <td class="cells"></td>
+                    <td class="cells"></td>
+                </tr>
             </tbody>
-            </table>
+        </table>
     </div>
 
-<br>
+    <br>
 
     <div id="warehouse">
-        <style type="text/css">
-            .tg  {border-collapse:collapse;border-spacing:0;}
-            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-              overflow:hidden;padding:10px 5px;word-break:normal;}
-            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-            .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-            .tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
-            .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-            </style>
-            <table class="tg"><thead>
-              <tr>
-                <th class="tg-7btt" colspan="9">WhareHouse</th>
-              </tr></thead>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="titles" colspan="9">WhareHouse</th>
+                </tr>
+            </thead>
             <tbody>
-              <tr>
-                <td class="tg-0pky"></td>
-                <td class="tg-c3ow" colspan="7">Stand Refill</td>
-                <td class="tg-0pky"></td>
-              </tr>
-              <tr>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky"></td>
-                <td class="tg-c3ow">Fresh Water</td>
-                <td class="tg-c3ow">Orange Juice</td>
-                <td class="tg-c3ow">Lemonade</td>
-                <td class="tg-c3ow">Orange Soda</td>
-                <td class="tg-c3ow">Cola</td>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky"></td>
-              </tr>
-              <tr>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky"></td>
-                <td class="tg-c3ow">5$</td>
-                <td class="tg-c3ow">20$</td>
-                <td class="tg-c3ow">50$</td>
-                <td class="tg-c3ow">75$</td>
-                <td class="tg-c3ow">100$</td>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky"></td>
-              </tr>
-              <tr>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky"></td>
-                <td class="tg-c3ow">+10 Stock =</td>
-                <td class="tg-c3ow">100$</td>
-                <td class="tg-c3ow"></td>
-                <td class="tg-c3ow">Supplier = </td>
-                <td class="tg-c3ow">1.000$</td>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky"></td>
-              </tr>
-              <tr>
-                <td class="tg-0pky"></td>
-                <td class="tg-c3ow" colspan="7">Vending Machine</td>
-                <td class="tg-0pky"></td>
-              </tr>
-              <tr>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky"></td>
-                <td class="tg-c3ow">10 secondes</td>
-                <td class="tg-c3ow">7 secondes</td>
-                <td class="tg-c3ow">5 secondes</td>
-                <td class="tg-c3ow">3 secondes</td>
-                <td class="tg-c3ow">1 secondes</td>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky"></td>
-              </tr>
-              <tr>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky"></td>
-                <td class="tg-c3ow">10.000$</td>
-                <td class="tg-c3ow">50.000$</td>
-                <td class="tg-c3ow">100.000$</td>
-                <td class="tg-c3ow">500.000$</td>
-                <td class="tg-c3ow">1.000.000$</td>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky"></td>
-              </tr>
-              <tr>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky"></td>
-                <td class="tg-c3ow">Refill = </td>
-                <td class="tg-c3ow">70$</td>
-                <td class="tg-c3ow"></td>
-                <td class="tg-c3ow">Supplier = </td>
-                <td class="tg-c3ow">5.000$</td>
-                <td class="tg-0pky"></td>
-                <td class="tg-0pky"></td>
-              </tr>
-            </tbody></table>
+                <tr>
+                    <td class="cells"></td>
+                    <td class="cells" colspan="7">Stand Refill</td>
+                    <td class="cells"></td>
+                </tr>
+                <tr>
+                    <td class="cells"></td>
+                    <td class="cells"></td>
+                    <td class="cells_product">Fresh Water</td>
+                    <td class="cells_product">Orange Juice</td>
+                    <td class="cells_product">Lemonade</td>
+                    <td class="cells_product">Orange Soda</td>
+                    <td class="cells_product">Cola</td>
+                    <td class="cells"></td>
+                    <td class="cells"></td>
+                </tr>
+                <tr>
+                    <td class="cells"></td>
+                    <td class="cells"></td>
+                    <td class="cells_price">5$</td>
+                    <td class="cells_price">20$</td>
+                    <td class="cells_price">50$</td>
+                    <td class="cells_price">75$</td>
+                    <td class="cells_price">100$</td>
+                    <td class="cells"></td>
+                    <td class="cells"></td>
+                </tr>
+                <tr>
+                    <td class="cells"></td>
+                    <td class="cells"></td>
+                    <td class="cells">+10 Stock =</td>
+                    <td class="cells_price">100$</td>
+                    <td class="cells"></td>
+                    <td class="cells">Supplier = </td>
+                    <td class="cells_price">1.000$</td>
+                    <td class="cells"></td>
+                    <td class="cells"></td>
+                </tr>
+                <tr>
+                    <td class="cells"></td>
+                    <td class="cells" colspan="7">Vending Machine</td>
+                    <td class="cells"></td>
+                </tr>
+                <tr>
+                    <td class="cells"></td>
+                    <td class="cells"></td>
+                    <td class="cells">10 secondes</td>
+                    <td class="cells">7 secondes</td>
+                    <td class="cells">5 secondes</td>
+                    <td class="cells">3 secondes</td>
+                    <td class="cells">1 secondes</td>
+                    <td class="cells"></td>
+                    <td class="cells"></td>
+                </tr>
+                <tr>
+                    <td class="cells"></td>
+                    <td class="cells"></td>
+                    <td class="cells_price">10.000$</td>
+                    <td class="cells_price">50.000$</td>
+                    <td class="cells_price">100.000$</td>
+                    <td class="cells_price">500.000$</td>
+                    <td class="cells_price">1.000.000$</td>
+                    <td class="cells"></td>
+                    <td class="cells"></td>
+                </tr>
+                <tr>
+                    <td class="cells"></td>
+                    <td class="cells"></td>
+                    <td class="cells">Refill = </td>
+                    <td class="cells_price">70$</td>
+                    <td class="cells"></td>
+                    <td class="cells">Supplier = </td>
+                    <td class="cells_price">5.000$</td>
+                    <td class="cells"></td>
+                    <td class="cells"></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
-<br>
+    <br>
 
     <div id="bank">
-        <style type="text/css">
-            .tg  {border-collapse:collapse;border-spacing:0;}
-            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-              overflow:hidden;padding:10px 5px;word-break:normal;}
-            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-            .tg .tg-baqh{text-align:center;vertical-align:top}
-            .tg .tg-0lax{text-align:left;vertical-align:top}
-            .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
-            </style>
-            <table class="tg"><thead>
-              <tr>
-                <th class="tg-0lax"></th>
-                <th class="tg-amwm" colspan="5">BANK</th>
-                <th class="tg-0lax"></th>
-              </tr></thead>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="cells"></th>
+                    <th class="cells" colspan="5">BANK</th>
+                    <th class="cells"></th>
+                </tr>
+            </thead>
             <tbody>
-              <tr>
-                <td class="tg-0lax"></td>
-                <td class="tg-0lax"></td>
-                <td class="tg-baqh" colspan="3">x.xxx.xxx $</td>
-                <td class="tg-0lax"></td>
-                <td class="tg-0lax"></td>
-              </tr>
-              <tr>
-                <td class="tg-0lax"></td>
-                <td class="tg-0lax">Coin Holder</td>
-                <td class="tg-0lax">Small Safe</td>
-                <td class="tg-0lax">Medium Safe</td>
-                <td class="tg-0lax">Large Safe</td>
-                <td class="tg-0lax">Bank</td>
-                <td class="tg-0lax"></td>
-              </tr>
-              <tr>
-                <td class="tg-0lax"></td>
-                <td class="tg-0lax"></td>
-                <td class="tg-0lax">500$</td>
-                <td class="tg-0lax">5.000$</td>
-                <td class="tg-0lax">50.000$</td>
-                <td class="tg-0lax">100.000$</td>
-                <td class="tg-0lax"></td>
-              </tr>
-              <tr>
-                <td class="tg-0lax"></td>
-                <td class="tg-0lax">500$</td>
-                <td class="tg-0lax">5.000$</td>
-                <td class="tg-0lax">50.000$</td>
-                <td class="tg-0lax">100.000$</td>
-                <td class="tg-0lax">2.000.000<br></td>
-                <td class="tg-0lax"></td>
-              </tr>
-            </tbody></table>
+                <tr>
+                    <td class="cells"></td>
+                    <td class="cells"></td>
+                    <td class="tg-baqh" colspan="3">x.xxx.xxx $</td>
+                    <td class="cells"></td>
+                    <td class="cells"></td>
+                </tr>
+                <tr>
+                    <td class="cells"></td>
+                    <td class="cells">Coin Holder</td>
+                    <td class="cells">Small Safe</td>
+                    <td class="cells">Medium Safe</td>
+                    <td class="cells">Large Safe</td>
+                    <td class="cells">Bank</td>
+                    <td class="cells"></td>
+                </tr>
+                <tr>
+                    <td class="cells"></td>
+                    <td class="cells"></td>
+                    <td class="cells">500$</td>
+                    <td class="cells">5.000$</td>
+                    <td class="cells">50.000$</td>
+                    <td class="cells">100.000$</td>
+                    <td class="cells"></td>
+                </tr>
+                <tr>
+                    <td class="cells"></td>
+                    <td class="cells">500$</td>
+                    <td class="cells">5.000$</td>
+                    <td class="cells">50.000$</td>
+                    <td class="cells">100.000$</td>
+                    <td class="cells">2.000.000<br></td>
+                    <td class="cells"></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
+
 </html>

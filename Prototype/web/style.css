@@ -1,0 +1,28 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+/* TABLES */
+.title {}
+.table td {border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+    overflow:hidden;padding:10px 5px;word-break:normal;}
+.table th {border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+    font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.cells {border-color:inherit;text-align:left;vertical-align:top}
+.cells_price {border-color: inherit;text-align: center;vertical-align: top}
+.cells_product {border-color: inherit;font-weight: bold;text-align: center;vertical-align: top}
+
+/* STAND */
+#stand {border-color:DarkSeaGreen;border-style:solid;border-width:1px;width: 50%;}
+#stand .table  {border-collapse:collapse;border-spacing:0;background-color: CadetBlue;}
+.table #title_stand {border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+
+/* VENDING MACHINE */
+#vendingMachine {border-color:MediumSlateBlue;border-style:solid;border-width:1px;width: 25%;}
+#vendingMachine .table  {border-collapse:collapse;border-spacing:0;background-color: LightSteelBlue;}
+
+/* WAREHOUSE */
+#warehouse {border-color:maroon;border-style:solid;border-width:1px;width: 75%;}
+#warehouse .table  {border-collapse:collapse;border-spacing:0;background-color: coral;}
+
+/* BANK */
+#bank {border-color:yellowgreen;border-style:solid;border-width:1px;width: 75%;}
+#bank .table  {border-collapse:collapse;border-spacing:0;background-color: yellow;}
