@@ -1,34 +1,125 @@
-*{margin: 0; padding: 0; box-sizing: border-box;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* TABLES */
-.title {}
-.table td {border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-    overflow:hidden;padding:10px 5px;word-break:normal;}
-.table th {border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-    font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.cells {border-color:inherit;text-align:left;vertical-align:top}
-.cells_price {border-color: inherit;text-align: center;vertical-align: top}
-.cells_product {border-color: inherit;font-weight: bold;text-align: center;vertical-align: top}
+.titles {
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+}
+
+.table td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.table th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.cells {
+    border-color: inherit;
+    text-align: left;
+    vertical-align: top;
+}
+
+.cells_price {
+    border-color: inherit;
+    text-align: center;
+    vertical-align: top;
+}
+
+.cells_product {
+    border-color: inherit;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+}
 
 /* STAND */
-#stand {border-color:DarkSeaGreen;border-style:solid;border-width:1px;width: 50%;}
-#stand .table  {border-collapse:collapse;border-spacing:0;background-color: CadetBlue;}
-.table #title_stand {border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+#stand {
+    border-color: DarkSeaGreen;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#stand .table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: CadetBlue;
+}
+
+.table #title_stand {
+    border-color: inherit;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+}
 
 /* VENDING MACHINE */
-#vendingMachine {border-color:MediumSlateBlue;border-style:solid;border-width:1px;width: 25%;}
-#vendingMachine .table  {border-collapse:collapse;border-spacing:0;background-color: LightSteelBlue;}
+#vendingMachine {
+    border-color: MediumSlateBlue;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#vendingMachine .table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: LightSteelBlue;
+}
 
 /* WAREHOUSE */
-#warehouse {border-color:maroon;border-style:solid;border-width:1px;width: 75%;}
-#warehouse .table  {border-collapse:collapse;border-spacing:0;background-color: coral;}
+#warehouse {
+    border-color: maroon;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#warehouse .table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: coral;
+}
 
 /* BANK */
-#bank {border-color:yellowgreen;border-style:solid;border-width:1px;width: 75%;}
-#bank .table  {border-collapse:collapse;border-spacing:0;background-color: yellow;}
+#bank {
+    border-color: yellowgreen;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#bank .table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: yellow;
+}
 
 /* BUTTON */
 .button {
+    margin: 5%;
+    padding: 5%;
+    background-color: goldenrod;
+}
+
+.button_sell {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     letter-spacing: 2px;
@@ -43,16 +134,43 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-  }
-  
-  .button:active {
+}
+
+.button_sell:active {
     box-shadow: 0px 0px 0px 0px;
     top: 5px;
     left: 5px;
-  }
-  
-  @media (min-width: 768px) {
-    .button {
-      padding: 0.25em 0.75em;
+}
+
+@media (min-width: 768px) {
+    .button_sell {
+        padding: 0.25em 0.75em;
     }
-  }
+}
+
+
+/* FLEXBOX */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#box_stand {
+    padding : 1%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#box_management {
+    padding : 1%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
