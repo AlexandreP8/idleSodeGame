@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idle Soda Game V2</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<header id="title_game">
+    <h1>IDLE SODA GAME</h1>
+</header>
+
+<body>
+    <div id="bloc">
+        <div id="blocLeft">
+            <!-- STAND -->
+            <div id="standBox">
+                <table id="stand">
+                    <thead>
+                        <th colspan="5">STAND</th>
+                    </thead>
+                    <tbody>
+                        <!-- title drink -->
+                        <tr>
+                            <th class="water">FRESH WATER</th>
+                            <th rowspan="2" class="addNewDrink">ADD NEW DRINK</th>
+                        </tr>
+                        <!-- stock drink -->
+                        <tr>
+                            <td id="stock" class="stockWater">Stock = 0</td>
+                        </tr>
+                        <tr>
+                            <td class="water"><button>REFILL</button></td>
+                            <td rowspan="3" class="addNewDrink"><button>+</button></td>
+                        </tr>
+                        <tr>
+                            <td class="water">₵ 50</td>
+                        </tr>
+                        <tr>
+                            <td class="water"> <u>Recipe</u>
+                                <ul>
+                                    <li>Water x0.20</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="blocRight">
+            <!-- BANK -->
+            <div id="bank">
+                <p id="money">$ 0.000.000</p>
+                <p id="balance">+- $10</p>
+            </div>
+
+            <!-- COOK -->
+            <div id="kitchenBox">
+                <table id="kitchen">
+                    <thead>
+                        <th colspan="3">KITCHEN</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <th>STOCK</th>
+                            <th>BUY</th>
+                        </tr>
+                        <!-- Water -->
+                        <tr class="water">
+                            <td>Water</td>
+                            <td class="StockWater">0</td>
+                            <td><button>₵ 50</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <p>version prototype 0.0.2 - 02/12/2024</p>
+</footer>
+
+</html>
