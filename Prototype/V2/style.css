@@ -32,3 +32,29 @@ table th,td{
     font-family: Arial, sans-serif;
     font-size: 30px;
 }
+/* FLEXBOX */
+header,footer{
+    text-align: center;
+}
+@media only screen and (min-width: 320px) { 
+    #bloc{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+@media only screen and (min-width: 930px) { 
+    #bloc{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+#blocRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+}
