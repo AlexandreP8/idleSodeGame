@@ -16,24 +16,29 @@ table th,td{
 }
 
 /* STAND */
-
+#stand th,td{
+    font-size: 1.5em;
+}
 
 /* KITCHEN */
-
+#kitchen th,td{
+    font-size: 1.3em;
+}
 
 /* BANK */
-#money {
+#bank {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
-#money p{
-    padding : 1px;
+#bank p{
+
     /*font*/
     font-family: Arial, sans-serif;
-    font-size: 30px;
+    font-size: 28px;
 }
+
 /* BUTTON */
 button{
     background-color: goldenrod;
@@ -49,11 +54,13 @@ button{
     visibility: visible;
     background-color: white;
 }
+
+
 /* FLEXBOX */
 header,footer{
     text-align: center;
 }
-@media only screen and (min-width: 320px) { 
+@media only screen and (min-width: 500px) { 
     #bloc{
         display: flex;
         flex-direction: column;
@@ -61,7 +68,7 @@ header,footer{
         align-items: center;
     }
 }
-@media only screen and (min-width: 930px) { 
+@media only screen and (min-width: 1160px) { 
     #bloc{
         display: flex;
         flex-direction: row;
