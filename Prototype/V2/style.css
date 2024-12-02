@@ -19,6 +19,10 @@ table th,td{
 #stand th,td{
     font-size: 1.5em;
 }
+li{
+    font-size: 0.8em;
+    text-align: left;
+}
 
 /* KITCHEN */
 #kitchen th,td{
