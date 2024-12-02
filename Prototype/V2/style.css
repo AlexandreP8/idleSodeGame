@@ -24,6 +24,14 @@ li{
     text-align: left;
 }
 
+/*water*/
+.water,.stockWater{
+    visibility: visible;
+}
+.addNewDrink{
+    visibility: visible;
+}
+
 /* KITCHEN */
 #kitchen th,td{
     font-size: 1.3em;
@@ -50,7 +58,7 @@ button{
 }
 
 /* EVENTS */
-.stock{
+#stock{
     background-color: white;
 }
 #balance{
