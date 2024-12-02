@@ -1,3 +1,5 @@
+/***** STYLE FOR INDEX.HTML*****/
+
 /* TABLES */
 table th,td{
         /*border*/
@@ -31,6 +33,21 @@ table th,td{
     /*font*/
     font-family: Arial, sans-serif;
     font-size: 30px;
+}
+/* BUTTON */
+button{
+    background-color: goldenrod;
+    color: whitesmoke;
+}
+
+/* EVENTS */
+.stock{
+    background-color: white;
+}
+#balance{
+    padding : 10px;
+    visibility: visible;
+    background-color: white;
 }
 /* FLEXBOX */
 header,footer{
